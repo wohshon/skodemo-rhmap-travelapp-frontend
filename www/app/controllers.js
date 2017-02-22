@@ -83,7 +83,7 @@ $scope.search = function(){
   $scope.flightRecordsMatch = $scope.flightRecords.filter(function(fl){return ((fl.flightDestination==$scope.travelDestination) && (fl.flightOrigin==$scope.travelOrigin))});
   $scope.hotelRecordsMatch = $scope.hotelRecords.filter(function(h){return h.hotelCity==$scope.travelDestination});
   $scope.carRecordsMatch = $scope.carRecords.filter(function(c){return c.carCity==$scope.travelDestination});
-  
+  $scope.traveller=$scope.traveller;
   
 };
 
@@ -103,7 +103,7 @@ $scope.search = function(){
     var bookReq = {};
 
     //bookReq
-    bookReq["travller"]=traveller;
+    bookReq["traveller"]=traveller;
     if(flight){
       var selFlight = parseInt($scope.flightSel);
       var flightNo = $scope.flightRecordsMatch[selFlight].flightNo;
