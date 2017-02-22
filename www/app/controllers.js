@@ -83,6 +83,7 @@ $scope.search = function(){
   $scope.flightRecordsMatch = $scope.flightRecords.filter(function(fl){return ((fl.flightDestination==$scope.travelDestination) && (fl.flightOrigin==$scope.travelOrigin))});
   $scope.hotelRecordsMatch = $scope.hotelRecords.filter(function(h){return h.hotelCity==$scope.travelDestination});
   $scope.carRecordsMatch = $scope.carRecords.filter(function(c){return c.carCity==$scope.travelDestination});
+  //traveller
   $scope.traveller=$scope.traveller;
   
 };
