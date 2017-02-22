@@ -102,7 +102,8 @@ $scope.search = function(){
 
     var bookReq = {};
 
-
+    //bookReq
+    bookReq["travller"]=traveller;
     if(flight){
       var selFlight = parseInt($scope.flightSel);
       var flightNo = $scope.flightRecordsMatch[selFlight].flightNo;
