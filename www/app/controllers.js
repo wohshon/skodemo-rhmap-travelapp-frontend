@@ -97,7 +97,9 @@ $scope.search = function(){
     var flight=$scope.travelBookFlight;
     var hotel=$scope.travelBookHotel;
     var car=$scope.travelBookCar;
-    
+    //
+    var traveller=$scope.traveller;
+
     var bookReq = {};
 
 
