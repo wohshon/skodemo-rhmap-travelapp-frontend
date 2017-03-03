@@ -2,25 +2,48 @@
     <div id="formWrapper" class="panel panel-default">
         <div class="panel-body">
         <h4>TRAVEL BOOKING</h4>
-        <!---->
-           <input type="text" id="travelName" class="form-control" ng-model="traveller" placeholder="Enter your name"/>
+                <!---->
+           <input type="text" id="travelName" class="form-control" ng-model="traveller" placeholder="Enter your Name"/>
            <select class="form-control" id="travelOrigin" ng-model="travelOrigin" value="EZE">
+            <option value="EZE">Seoul</option>
+            <option value="GRU">Tokyo</option>
+            <option value="SCL">Mumbai</option>
+            <option value="BOG">Sydney</option>
+            <option value="MEX">Auckland</option>
+            <option value="SIN" selected>Singapore</option>
+            <option value="PEK">Beijing</option>
+<!--
             <option value="EZE" selected>Buenos Aires</option>
             <option value="GRU">Sao Paulo</option>
             <option value="SCL">Santiago</option>
             <option value="BOG">Bogotá</option>
             <option value="MEX">México DF</option>
+-->
           </select>
           <select class="form-control" id="travelDestination" ng-model="travelDestination" value="GRU">
+
+
+
+            <option value="EZE" selected>Seoul</option>
+            <option value="GRU">Tokyo</option>
+            <option value="SCL">Mumbai</option>
+            <option value="BOG">Sydney</option>
+            <option value="MEX">Auckland</option>
+            <option value="SIN">Singapore</option>
+            <option value="PEK">Beijing</option>
+
+
+<!--
             <option value="EZE">Buenos Aires</option>
             <option value="GRU" selected>Sao Paulo</option>
             <option value="SCL">Santiago</option>
             <option value="BOG">Bogotá</option>
             <option value="MEX">México DF</option>
+-->            
           </select>
           <input type="date" class="form-control" ng-model="travelDate" placeholder="Enter travel date." value="2017-01-01">
-          <input type="number" class="form-control" ng-model="travelPassengers" placeholder="Enter amount of passengers." value=2>
-          <input type="number" class="form-control" ng-model="travelDays" placeholder="Enter amount of days." value=6>
+          <input type="number" class="form-control" ng-model="travelPassengers" placeholder="No. of Passengers" value=2>
+          <input type="number" class="form-control" ng-model="travelDays" placeholder="No. of Days" value=6>
           <br>
           <br>
           <p>Book:</p>
@@ -112,7 +135,7 @@
 <section id="quote" ng-hide="quotePage">
   <div id="quotePagePanel" class="panel panel-default" >
     <div class="panel-heading">
-      <h4 class="panel-title">Booking</h4>
+      <h4 class="panel-title">Booking by {{travellerResp}}</h4>
     </div>
     <div class="panel-body">
       <div id="flightQuote" class="panel panel-default" ng-hide="!travelBookFlight">
