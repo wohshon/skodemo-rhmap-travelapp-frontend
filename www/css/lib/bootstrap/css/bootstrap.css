@@ -307,8 +307,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #CAE3E9;
-  background-image: url("https://dl.dropboxusercontent.com/u/351124934/imgs/bg_travelapp.jpg");
+  background-color: #990000;
   background-size: 100%;
 }
 
@@ -2354,8 +2353,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #EC7A08;
-  border-color: #CC670D;
+  background-color: #333333;
+  border-color: #333333;
 }
 
 .btn-primary:hover,
@@ -2364,8 +2363,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #CC670D;
-  border-color: #A8560C;
+  background-color: #444444;
+  border-color: #444444;
 }
 
 .btn-primary:active,
